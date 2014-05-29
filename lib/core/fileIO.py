@@ -11,7 +11,7 @@ def html_write(filename, html, description, fileExistsCalls=0 ):
         fd.close()
     else:
         filename = filename.split('.')[0] + str(fileExistsCalls) + ".html"
-        htmlWrite(filename, html, description, fileExistsCalls += 1)
+        html_write(filename, html, description, fileExistsCalls += 1)
 
     
         

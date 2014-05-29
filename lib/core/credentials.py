@@ -1,6 +1,6 @@
 from getpass import getpass
 
-def fbCreds():
+def fb_creds():
     creds = []
     creds.append(input("FB Username: "))
     creds.append(getpass())

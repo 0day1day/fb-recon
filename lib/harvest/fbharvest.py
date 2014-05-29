@@ -11,3 +11,12 @@ def gather_basic_info(victim):
         victim.personalInfo["last_name"] = data["last_name"]
         victim.personalInfo["gender"] = data["gender"]
         victim.personalInfo["link"] = data["link"]
+
+def gather_friends(victim, driver):
+    uname = victim.personalInfo["username"]
+    driver.get("http://facebook.com/" + uname + "friends/")
+# check if friends are found or not
+# render entire friendslist by scrolling to bottom
+# parse friend name by name, then get username
+# parse by div class "fsl fwb fcb"?
+
